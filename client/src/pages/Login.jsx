@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import PrimaryButton from '../components/PrimaryButton';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -66,9 +67,9 @@ const Login = () => {
               </button>
             </div>
           </div>
-          <button className="flex w-full items-center justify-center rounded-lg bg-primary h-12 px-6 text-base font-medium text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+          <PrimaryButton type="submit" icon="login">
             Login
-          </button>
+          </PrimaryButton>
         </form>
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
