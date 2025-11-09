@@ -12,6 +12,9 @@ const authRoutes = require('./routes/auth');
 
 app.use('/api/auth', authRoutes);
 
+const medicationRoutes = require('./routes/medications');
+app.use('/api/medications', medicationRoutes);
+
 app.get('/', (req, res) => {
   res.send('Hello from the server!');
 });
